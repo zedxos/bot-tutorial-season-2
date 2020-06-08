@@ -7,6 +7,14 @@ module.exports = async (client, message) => {
   
   let prefix = client.config.prefix;
   
+  let inviteLink = ["discord.gg", "discord.com/invite", "discordapp.com/invite"];
+  
+  if (inviteLink.some(word => message.content.toLowerCase().includes(word))) {
+    await message.delete();
+    return message.channel.send("Bro, you can't promote your server here!")
+    .then(m => m.delete({timeout: 10000})) // Add this if you want the message automatically deleted.
+  }
+  
   // If the user doesn't doing any to the bot, return it.
   if (!message.content.startsWith(prefix)) return;
   
