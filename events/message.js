@@ -58,6 +58,8 @@ module.exports = async (client, message) => {
     }
   }
   
+  client.emit('experience', message);
+  
   // If the user doesn't doing any to the bot, return it.
   if (!message.content.startsWith(prefix)) return;
   
