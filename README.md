@@ -1,4 +1,10 @@
 # Blob Development
+## Hello! Newcomers!
+Hey, this is an open source repo. So, please don't copy paste it just like that. You need <br>
+to learn the system first, learn the Javascript first. <br>
+<br>
+It's important to learn Javascript first. Slowly but sure.
+<br>
 ## Tutorial - Season 2
 
 #### Our support server:
